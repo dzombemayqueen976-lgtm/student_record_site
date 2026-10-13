@@ -55,6 +55,56 @@
       </ul>
     </section>
 
+    <!-- ===== HOW ARRAYS POWER THIS APP ===== -->
+    <section class="card">
+      <h2>How Arrays Power This App</h2>
+      <p>
+        The Student Records app is a real-world example of an <strong>array</strong> being
+        used to organise data. Arrays are ideal when you need to store many items of the
+        same type and access them quickly by position.
+      </p>
+      <p class="array-intro">
+        All records are stored in a single fixed-size array called <code>students[]</code>
+        (capacity 100), where each slot holds one <code>Student</code> struct containing the
+        ID, name, age, and grade. A separate counter variable, <code>studentCount</code>,
+        tracks how many slots are actually filled, so the program always knows where the
+        real data ends.
+      </p>
+
+      <!-- Each operation mapped to an array technique -->
+      <ul class="array-ops">
+        <li>
+          <span class="op-name">Add</span>
+          Places the new record at <code>students[studentCount]</code>, then increments the
+          counter — appending to the end of the array.
+        </li>
+        <li>
+          <span class="op-name">Display</span>
+          Loops from index <code>0</code> to <code>studentCount - 1</code> — a linear
+          traversal of the array.
+        </li>
+        <li>
+          <span class="op-name">Search</span>
+          Walks through the array comparing each ID to the target — a linear search on an
+          unsorted array.
+        </li>
+        <li>
+          <span class="op-name">Delete</span>
+          Shifts every element after the removed one left by one position, then decrements
+          the counter — the classic array-deletion technique that keeps the array packed
+          with no gaps.
+        </li>
+      </ul>
+
+      <p>
+        <strong>Why arrays suit this problem:</strong> records are accessed by position in
+        constant time, they are stored together in memory so looping is fast, and the
+        structure is simple and predictable. The trade-off is a fixed size and the need to
+        shift elements when deleting — which makes this a clear, practical example of how
+        arrays behave in a real application.
+      </p>
+    </section>
+
     <!-- ===== HOW TO RUN ===== -->
     <section class="card">
       <h2>How to run</h2>

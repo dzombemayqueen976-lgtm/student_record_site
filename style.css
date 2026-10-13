@@ -146,6 +146,45 @@ body {
   border-radius: 50%;
 }
 
+/* ----- Array explanation section ----- */
+/* Inline code snippets like students[] and studentCount */
+code {
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
+  font-size: 0.92em;
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.array-intro {
+  margin-top: 12px;
+}
+
+/* The four operations, each as a small labelled row */
+.array-ops {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.array-ops li {
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  background: var(--bg);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  font-size: 0.97rem;
+}
+
+/* The operation name (Add, Display, Search, Delete) */
+.op-name {
+  display: inline-block;
+  min-width: 72px;
+  margin-right: 8px;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
 /* ----- How-to-run steps ----- */
 .steps {
   padding-left: 22px;
